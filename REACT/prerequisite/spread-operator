@@ -1,0 +1,47 @@
+//for array
+
+let arr=[1,2,3];
+
+// let arr2=arr;
+
+// arr2.push(4);
+
+// console.log(arr);
+// console.log(arr2);
+
+// console.log(arr);
+// console.log(...arr);//list mai kar diya arr ko
+
+let arr2=[...arr];
+arr2.push[6];
+console.log(arr);
+console.log(arr2);
+
+
+for objects
+let obj ={
+    name:"jj",
+    add:{
+        country:"india",
+        state:{
+            code:"dl",
+            pin:"110085"
+        }
+
+    }
+
+}
+// let obj2=obj;
+// obj2.name="asdf";
+
+// console.log(obj);
+// console.log(obj2);
+
+//using spread operator
+
+let obj2={...obj,add:{...obj.add}};
+obj2.name="asdf";
+obj2.add.country="US";
+
+console.log(obj);
+console.log(obj2);
